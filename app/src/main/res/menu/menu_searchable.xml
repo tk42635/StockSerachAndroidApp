@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.hw9.ScrollingActivity" >
+    <item android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_star"
+        android:title="Favorite"
+        app:showAsAction="ifRoom"
+        />
+<!--    <item android:id="@+id/action_favorite_"-->
+<!--        android:icon="@drawable/ic_star__1_"-->
+<!--        android:title="Favorite"-->
+<!--        app:showAsAction="always|collapseActionView"-->
+<!--        app:actionViewClass="androidx.appcompat.widget.AppCompatImageButton"-->
+<!--        />-->
+
+    <!--    <item-->
+    <!--        android:id="@+id/app_bar_menu_share"-->
+    <!--        android:title="Share"-->
+    <!--        app:showAsAction="never"-->
+    <!--        app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"/>-->
+</menu>

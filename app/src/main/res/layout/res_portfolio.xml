@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/res_portfolio_1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/res_portfolio_2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_portfolio_1"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/TradeBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3D9F41"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/res_portfolio_btn"
+        android:text="Trade" />
+</RelativeLayout>

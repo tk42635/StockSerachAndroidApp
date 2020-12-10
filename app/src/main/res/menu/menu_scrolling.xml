@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.hw9.ScrollingActivity" >
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_24px"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView"/>
+
+<!--    <item-->
+<!--        android:id="@+id/app_bar_menu_share"-->
+<!--        android:title="Share"-->
+<!--        app:showAsAction="never"-->
+<!--        app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"/>-->
+</menu>

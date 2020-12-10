@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ScrollingActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/action_bar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:visibility="visible">
+
+            <!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+            <!--            android:id="@+id/toolbar_layout"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="100dp"-->
+            <!--            android:fitsSystemWindows="true"-->
+            <!--            android:background="#FFFFFF"-->
+            <!--            app:contentScrim="?attr/colorPrimary"-->
+            <!--            app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+            <!--            app:toolbarId="@+id/toolbar">-->
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="20dp"
+                android:elevation="100dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeHW9.PopupOverlay" />
+    <!--        <androidx.appcompat.widget.AppCompatAutoCompleteTextView-->
+    <!--            android:id="@+id/autocomplete"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            />-->
+
+            <!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/action_bar_container"
+            android:id="@+id/main_date"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="December 3, 2020"
+            />
+
+        <TextView
+            android:id="@+id/portfolio_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_date"
+            android:background="#FFFFFF"
+            android:backgroundTint="#DEE4E4"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="PORTFOLIO"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_below="@id/portfolio_title"
+            android:id="@+id/net_worth_1"
+            android:textSize="25sp"
+            android:text="Net Worth"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_below="@id/net_worth_1"
+            android:textStyle="bold"
+            android:id="@+id/net_worth_2"
+            android:textSize="25sp"
+            android:text="0.00"
+            android:textColor="@color/black"
+            android:background="@drawable/line2"
+            />
+        <FrameLayout
+            android:id="@+id/portfolio_content_fragment"
+            android:layout_weight="2"
+            android:layout_below="@id/net_worth_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/watchlist_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/portfolio_content_fragment"
+            android:background="#FFFFFF"
+            android:backgroundTint="#DEE4E4"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="FAVORITES"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/watchlist_content_fragment"
+            android:layout_weight="2"
+            android:layout_below="@id/watchlist_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watchlist_content_fragment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/linkBottom"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:text="Powered by tiingo"
+            android:clickable="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="320dp"
+    android:background="#FFFFFF"
+    android:foregroundTint="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/dialogNewsImage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogNewsImage"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/dialogButtonTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/news_dialog"
+            app:srcCompat="@drawable/ic_icons8_twitter__2_" />
+
+        <ImageButton
+            android:id="@+id/dialogButtonChrome"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/news_dialog"
+            app:srcCompat="@drawable/ic_icons8_chrome__1_" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
